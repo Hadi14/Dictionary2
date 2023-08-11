@@ -19,14 +19,15 @@
                 var inpvalue = $(this).val();
                 $.ajax('feed.php', {
                     type: 'post',
+                    dataType: "JSON",
                     data: {
                         key: inpvalue
                     },
                     success: function(data) {
                         // console.log(data);
                         // $('#txtbox').html(data);
-                        var dec = JSON.parse(data);
-                        $('#txtbox').text(dec.content);
+                        // var dec = JSON.parse(data);
+                        $('#txtbox').text(data.content);
                     }
                 })
             })
