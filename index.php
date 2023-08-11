@@ -27,7 +27,7 @@
                         // console.log(data);
                         // $('#txtbox').html(data);
                         // var dec = JSON.parse(data);
-                        $('#txtbox').text(data.content);
+                        $('#txtbox').html(data.content);
                     }
                 })
             })
