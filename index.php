@@ -24,7 +24,9 @@
                     },
                     success: function(data) {
                         // console.log(data);
-                        $('#txtbox').html(data);
+                        // $('#txtbox').html(data);
+                        var dec = JSON.parse(data);
+                        $('#txtbox').text(dec.content);
                     }
                 })
             })
