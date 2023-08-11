@@ -12,6 +12,6 @@ $records = $db->query($sql);
 
 $out['content'] = "";
 foreach ($records as $record) {
-    $out['content'] .=  $record['word'] . "<br>";
+    $out['content'] .= "<strong>" . $record['word'] . "</strong>" . "<br>" . $record['meaning'] . "<hr>";
 }
 echo json_encode($out);
